@@ -16,7 +16,7 @@ struct LoginView: View {
             // "Vertical Stack"
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(title: "To Do list", subtitle: "Get things done", angle: 15, background: .green)
                 
                 // Login Form
                 Form {

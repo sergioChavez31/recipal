@@ -9,7 +9,13 @@ import SwiftUI
 
 struct RegisterView: View {
     var body: some View {
-        Text("Register, World!")
+        // "Vertical Stack"
+        VStack {
+            // Header
+            HeaderView(title: "Register", subtitle: "Start Putting in Recipes", angle: -15, background: .orange)
+            
+            Spacer()
+        }
     }
 }
 
