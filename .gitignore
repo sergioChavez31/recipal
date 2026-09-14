@@ -1,0 +1,39 @@
+# Xcode
+
+## User-specific Xcode settings
+xcuserdata/
+*.xcuserstate
+
+## Xcode build files
+DerivedData/
+build/
+
+## Swift / Objective-C
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+
+# Keep Package.resolved tracked
+# This locks the versions of dependencies such as Firebase.
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
