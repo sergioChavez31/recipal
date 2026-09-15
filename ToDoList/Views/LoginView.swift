@@ -15,22 +15,31 @@ struct LoginView: View {
             // "Vertical Stack"
             VStack {
                 // Header
-                HeaderView(title: "To Do list", subtitle: "Get things done", angle: 15, background: .green)
+                HeaderView(title: "To Do list",
+                           subtitle: "Get things done",
+                           angle: 15,
+                           background: .green)
                 
-                // Login Form
+                // Login Form 
                 Form {
+                    if !viewmodel.errorMessage.isEmpty {
+                        Text(viewmodel.errorMessage).foregroundColor(Color.red)
+                    }
+                    
                     TextField("Email Address", text: $viewmodel.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .autocapitalization(.none)
                     SecureField("Password", text: $viewmodel.password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    TLButton(title: "Log In", background: .blue) {
-                        
+                    TLButton(title: "Log In",
+                             background: .blue) {
+                        // Attempt log in
+                        viewmodel.login()
                     }
                     .padding()
                 }
-                
+                .offset(y: -50)
                 
                 // Create Account
                 VStack {

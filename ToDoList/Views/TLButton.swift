@@ -24,13 +24,15 @@ struct TLButton: View {
                     .foregroundColor(background)
                 Text(title).bold()
                     .foregroundColor(Color.white)
+                    .bold()
             }
         }
     }
 }
 
 #Preview {
-    TLButton(title: "Hello", background: .blue) {
-        
+    TLButton(title: "Hello",
+             background: .blue) {
+        // Action
     }
 }

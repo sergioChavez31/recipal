@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var viewModel = MainViewViewModel()
+    
     var body: some View {
-        // Takes you to login view
-        NavigationView {
+        if viewModel.isSignedIn,
+           !viewModel.currentUserId.isEmpty {
+            // signed in
+            ToDoListView()
+        } else {
             LoginView()
         }
-        .padding()
     }
 }
 
