@@ -9,5 +9,7 @@ import Foundation
 
 // ViewModel for single to do list item view 
 class ToDoListViewViewModel: ObservableObject {
+    @Published var showingNewItemView = false
+    
     init() {}
 }
