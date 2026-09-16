@@ -14,7 +14,7 @@ struct RegisterView: View {
         // "Vertical Stack"
         VStack {
             // Header
-            HeaderView(title: "Register", subtitle: "Start Putting in Recipes", angle: -15, background: .orange)
+            HeaderView(title: "Register Account", subtitle: "Start Putting in Recipes", angle: -15, background: .orange)
             
             Form {
                 TextField("Full Name", text: $viewModel.name)

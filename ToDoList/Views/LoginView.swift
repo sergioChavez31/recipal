@@ -16,7 +16,7 @@ struct LoginView: View {
             VStack {
                 // Header
                 HeaderView(title: "ReciPal",
-                           subtitle: "Always remember what you need to cook, anytime :) ",
+                           subtitle: "Helping you cook, always ",
                            angle: 15,
                            background: .green)
                 
