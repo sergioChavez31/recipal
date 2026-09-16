@@ -13,7 +13,7 @@ struct NewItemView: View {
     
     var body: some View {
         VStack {
-            Text("New Item")
+            Text("New Recipe")
                 .font(.system(size: 32))
                 .bold()
                 .padding(.top, 100)
@@ -23,8 +23,12 @@ struct NewItemView: View {
                 TextField("Title", text: $viewModel.title)
                     .textFieldStyle(DefaultTextFieldStyle())
                 
+                // Ingredients
+                TextField("Enter ingredients", text: $viewModel.ingredients)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                
                 // Due Date
-                DatePicker("Due Date", selection: $viewModel.dueDate)
+                DatePicker("When do you want to get these ingredients?", selection: $viewModel.dueDate)
                     .datePickerStyle(GraphicalDatePickerStyle())
                 
                 // Button

@@ -10,6 +10,7 @@ import Foundation
 struct ToDoListItem: Codable, Identifiable {
     let id: String
     let title: String
+    let ingredients: String
     let dueDate: TimeInterval
     let createdDate: TimeInterval
     var isDone: Bool

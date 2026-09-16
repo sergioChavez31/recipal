@@ -12,6 +12,7 @@ class NewItemViewViewModel: ObservableObject {
     @Published var title = ""
     @Published var dueDate = Date()
     @Published var showAlert = false
+    @Published var ingredients = ""
     
     init() {}
     
@@ -30,6 +31,7 @@ class NewItemViewViewModel: ObservableObject {
         let newItem = ToDoListItem(
             id: newId,
             title: title,
+            ingredients: ingredients,
             dueDate: dueDate.timeIntervalSince1970,
             createdDate: Date().timeIntervalSince1970,
             isDone: false

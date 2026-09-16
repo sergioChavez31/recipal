@@ -23,7 +23,9 @@ struct ToDoListView: View {
     
     var body: some View {
         NavigationView {
+            
             VStack {
+                Text("Click the \"+\" icon to get started with entering a recipe's title/name, the recipe and ingredients themselves, and a date you plan on making it  :)").padding() .border(Color.brown)
                 List(items) { item in
                     ToDoListItemView(item: item)
                         .swipeActions {
@@ -34,7 +36,7 @@ struct ToDoListView: View {
                         }
                 }
             }
-            .navigationTitle("To Do List")
+            .navigationTitle("ReciPal")
             .toolbar {
                 Button {
                     // Action

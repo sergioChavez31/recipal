@@ -15,8 +15,8 @@ struct LoginView: View {
             // "Vertical Stack"
             VStack {
                 // Header
-                HeaderView(title: "To Do list",
-                           subtitle: "Get things done",
+                HeaderView(title: "ReciPal",
+                           subtitle: "Always remember what you need to cook, anytime :) ",
                            angle: 15,
                            background: .green)
                 
@@ -43,7 +43,7 @@ struct LoginView: View {
                 
                 // Create Account
                 VStack {
-                    Text("New around here?")
+                    Text("New user?")
                     
                     NavigationLink("Create an Account",
                                    destination: RegisterView())
